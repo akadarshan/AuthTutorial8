@@ -1,0 +1,11 @@
+<mat-toolbar color="primary" class="navbar">
+  <div>19SOECE13006-TUTORIAL 8</div>
+  <div>
+    <a class="float-end" (click)="logout()">
+      <span class="fa fa-sign-out-alt text-white mr-4"></span>
+    </a>
+  </div>
+</mat-toolbar>
+<div *ngIf="this._authService.isLoading | async">
+  <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+</div>
